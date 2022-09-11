@@ -8,9 +8,9 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromBy;
-import net.serenitybdd.screenplay.waits.Wait;
 import net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 
 public class Join implements Task {
@@ -50,6 +50,7 @@ public class Join implements Task {
                 Click.on(RegisterPage.BIRTH_YEAR_INPUT),
                 new SelectByVisibleTextFromBy(year, By.xpath("//*[@id=\"birthYear\"]")),
                 Click.on(RegisterPage.NEXT_LOCATION_BUTTON),
+                new WaitUntilTargetIsReady(RegisterPage.AUTODETECT_MSG, isVisible()),
                 Click.on(RegisterPage.NEXT_DEVICES_BUTTON),
                 Click.on(RegisterPage.NEXT_LAST_SEPT_BUTTON),
                 Enter.theValue(password).into(RegisterPage.CREATE_PASSWORD_INPUT),

@@ -15,8 +15,9 @@ public class RegisterPage extends PageObject {
     public static final Target BIRTH_DAY_INPUT=Target.the("Where do select the day of the birth").located(By.xpath("//*[@id=\"birthDay\"]"));
     public static final Target BIRTH_YEAR_INPUT=Target.the("Where do select the year of the birth").located(By.xpath("//*[@id=\"birthYear\"]"));
     public static final Target NEXT_LOCATION_BUTTON=Target.the("Button to continue with the register, location").located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[2]/a"));
-    public static final Target NEXT_DEVICES_BUTTON=Target.the("Button to continue with the register, devices").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[2]/div/a")).waitingForNoMoreThan(Duration.ofSeconds(4));
-    public static final Target NEXT_LAST_SEPT_BUTTON=Target.the("Button to continue with the register, last step").located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/div[2]/div/a")).waitingForNoMoreThan(Duration.ofSeconds(4));
+    public static final Target AUTODETECT_MSG=Target.the("Autodetect message when completes address info").located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[4]/div[2]/div/span[2]"));
+    public static final Target NEXT_DEVICES_BUTTON=Target.the("Button to continue with the register, devices").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[2]/div/a"));
+    public static final Target NEXT_LAST_SEPT_BUTTON=Target.the("Button to continue with the register, last step").located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/div[2]/div/a"));
     public static final Target CREATE_PASSWORD_INPUT=Target.the("where do write the password").located(By.id("password"));
     public static final Target CONFIRM_PASSWORD_INPUT=Target.the("where do confirm the password").located(By.id("confirmPassword"));
     public static final Target TERMS_CHECK=Target.the("Checkbox to accept uTest terms of use").located(By.xpath("//*[@id=\"regs_container\"]/div/div[2]/div/div[2]/div/form/div[5]/label/span[1]"));

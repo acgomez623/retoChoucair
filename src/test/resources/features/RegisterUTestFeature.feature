@@ -7,7 +7,7 @@
     Given than Angie needs join to the UTest community
     When she completes the registration form
     | firstName | lastName | mail | month | day | year | password |
-    | Angie     | Gomez    | 4315345@gmail.com| February| 19|1999| Ch0uc41r2022*|
+    | Angie     | Gomez    | 615345@gmail.com| February| 19|1999| Ch0uc41r2022*|
     Then system displays a welcome message:
     | message |
     | Welcome to the world's largest community of freelance software testers! |
