@@ -9,6 +9,8 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromBy;
 import net.serenitybdd.screenplay.waits.Wait;
+import net.serenitybdd.screenplay.waits.WaitUntilTargetIsReady;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class Join implements Task {
@@ -55,5 +57,7 @@ public class Join implements Task {
                 Click.on(RegisterPage.TERMS_CHECK),
                 Click.on(RegisterPage.PRIVACY_CHECK),
                 Click.on(RegisterPage.COMPLETE_SETUP_BUTTON));
+
+
     }
 }

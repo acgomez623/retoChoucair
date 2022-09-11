@@ -26,7 +26,7 @@ public class RegisterStepDefinitions {
     }
 
     @When("^she completes the registration form$")
-    public void sheCompletesTheRegistrationForm(List<RegisterData> registerData) {
+    public void sheCompletesTheRegistrationForm(List<RegisterData> registerData){
         OnStage.theActorInTheSpotlight().attemptsTo(Join.onThePage(registerData.get(0).getFirstName(),
                 registerData.get(0).getLastName(), registerData.get(0).getMail(),
                 registerData.get(0).getMonth(), registerData.get(0).getDay(),
